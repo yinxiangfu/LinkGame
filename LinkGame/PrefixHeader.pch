@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  LinkGame
+//
+//  Created by biznest on 15/5/28.
+//  Copyright (c) 2015年 biznest. All rights reserved.
+//
+
+#ifndef LinkGame_PrefixHeader_pch
+#define LinkGame_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "CustomPoint.h"
+#import "Piece.h"
+
+#import "LinkPoint.h"
+#import "ImageTool.h"
+
+#define Index_X     (int)(UI_WIDTH - BeginX * 2)/ImageSize  //横向个数
+#define Index_Y     (int)(UI_HEIGHT - BeginY - 50)/ImageSize  //纵向个数
+#define ImageSize   40  //图片大小
+#define BeginX      5   //起始位置x
+#define BeginY      20  //起始位置y
+#define GAME_TIME   120 //游戏总时间
+
+#define UI_WIDTH    [UIScreen mainScreen].bounds.size.width
+#define UI_HEIGHT   [UIScreen mainScreen].bounds.size.height
+
+#endif
